@@ -66,6 +66,14 @@ class Favorites(TypedTable):
 
     article_id: int
     user_id: int
+    name: str
+
+
+class Foods(TypedTable):
+    __table__ = "foods"
+
+    id: int
+    name: str 
 
 
 users = Users()
@@ -73,3 +81,4 @@ articles = Articles()
 tags = Tags()
 articles_to_tags = ArticlesToTags()
 favorites = Favorites()
+foods = Foods()

@@ -13,7 +13,19 @@ Run postgres container:
 another terminal
 
 `poetry shell`
-`uvicorn app.main:app -- reload`
+
+`uvicorn app.main:app --reload`
 
 
 navigate to http://localhost:8000/docs
+
+
+
+##where are DB models?
+-`app/db/queries/tables.py`
+
+
+
+## create migration
+
+1. Add table / entity to tables.py
